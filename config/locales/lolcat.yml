@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    pods:
+      title: Pods
+  admin:
+    pods:
+      actions:
+        create_new: CREATE NEW Pod
+        reorder: REORDR Pods
+        reorder_done: DUN REORDERIN Pods
+      records:
+        title: Pods
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Pods YET. CLICK "CREATE NEW Pod" 2 ADD UR FURST pod.
+      pod:
+        view_live_html: VIEW DIS pod LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS pod
+        delete: REMOOV DIS pod FOREVR
+  pods:
+    show:
+      other: OTHR Pods

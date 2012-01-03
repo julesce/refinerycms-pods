@@ -1,0 +1,63 @@
+<% content_for :body_content_title do %>
+  <%= @pod.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @pod.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Body</h1>
+    <p>
+      <%=raw @pod.body %>
+    </p>
+  </section>
+  <section>
+    <h1>Url</h1>
+    <p>
+      <%=raw @pod.url %>
+    </p>
+  </section>
+  <section>
+    <h1>Image</h1>
+    <p>
+      <%= image_fu @pod.image, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Pod Type</h1>
+    <p>
+      <%=raw @pod.pod_type_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Portfolio Entry</h1>
+    <p>
+      <%=raw @pod.portfolio_entry_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Video</h1>
+    <p>
+      <%=raw @pod.video_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pods">
+      <% @pods.each do |pod| %>
+        <li>
+          <%= link_to pod.name, pod_path(pod) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
