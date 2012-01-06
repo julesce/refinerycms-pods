@@ -6,7 +6,7 @@ class CreatePods < ActiveRecord::Migration
       t.text :body
       t.string :url
       t.integer :image_id
-      t.integer :pod_type_id
+      t.string :pod_type
       t.integer :portfolio_entry_id
       t.integer :video_id
       t.integer :position
@@ -15,6 +15,10 @@ class CreatePods < ActiveRecord::Migration
     end
 
     add_index :pods, :id
+    add_index :pods, :image_id
+    add_index :pods, :pod_type
+    add_index :pods, :portfolio_entry_id
+    add_index :pods, :video_id
 
     load(Rails.root.join('db', 'seeds', 'pods.rb'))
   end
@@ -24,9 +28,9 @@ class CreatePods < ActiveRecord::Migration
       UserPlugin.destroy_all({:name => "pods"})
     end
 
-    if defined?(Page)
-      Page.delete_all({:link_url => "/pods"})
-    end
+    #if defined?(Page)
+    #  Page.delete_all({:link_url => "/pods"})
+    #end
 
     drop_table :pods
   end

@@ -1,0 +1,8 @@
+<div class="side_pod content">
+    <% if pod.url.present? and pod.name.present? %>
+      <h1><%= link_to(pod.name, pod.url, :class => 'title') %></h1>
+    <% else %>
+      <h1><div class="title"><%= pod.name %></div></h1>
+    <% end %>
+    <%= content_tag('div', raw(pod.body), :class => 'body') if pod.body.present? %>
+</div>

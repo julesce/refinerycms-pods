@@ -1,0 +1,20 @@
+<div class="tile gallery">
+  <ul class="gallery_slider">
+    <% pod.portfolio_entry.images.each do |image| %>
+      <li>
+        <%= image_fu(image, '280x180#c') %>
+      </li>
+    <% end if pod.portfolio_entry.present? and pod.portfolio_entry.images.present? %>
+  </ul>
+  <p><%= pod.name %></p>
+</div>
+
+<% content_for :javascripts do %>
+  <script type='text/javascript'>
+
+    $(document).ready(function() {
+      $(".gallery ul li a").colorbox({height:"85%", transition:"elastic"});
+    });
+  
+  </script>
+<% end %>

@@ -7,8 +7,9 @@
   <%= hidden_field_tag 'pod[page_ids][]' %>
 
   <div class='field'>
-    <%= f.label :pod_type_id -%>
-    <%= f.collection_select :pod_type_id, PodType.order(:name), :id , :name, {:prompt => "-- Please select --"}, {} -%>
+    <%= f.label :pod_type -%>
+    <%#= f.collection_select :pod_type_id, PodType.order(:name), :id , :name, {:prompt => "-- Please select --"}, {} -%>
+    <%= f.select :pod_type, Pod::POD_TYPES, {:include_blank => true} %>
   </div>
 
   <div class='field'>

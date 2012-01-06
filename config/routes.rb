@@ -1,5 +1,4 @@
 ::Refinery::Application.routes.draw do
-  resources :pods, :only => [:index, :show]
 
   scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
     resources :pods, :except => :show do
