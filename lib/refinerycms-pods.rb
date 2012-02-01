@@ -8,7 +8,7 @@ module Refinery
       end
 
       config.before_initialize do
-        require 'page_extensions'
+        require 'page_extensions_for_pods'
       end
 
       config.to_prepare do
