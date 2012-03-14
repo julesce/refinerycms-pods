@@ -2,16 +2,14 @@
 
 Manageable little side-pods for your [Refinery CMS](http://refinerycms.com) website. Depends on the following engines:
 
-Images
-Portfolios
-Videos
-Pages
++ Portfolios - https://github.com/resolve/refinerycms-portfolio (0.9.10)
++ Videos - https://github.com/julesce/refinerycms-videos (1.0)
 
 This version of `refinerycms-pods` supports Rails 3.0.x.
 
 ## Requirements
 
-Refinery CMS version 1.0.0 or above.
+Refinery CMS version 1.0.x.
 
 ## Install
 

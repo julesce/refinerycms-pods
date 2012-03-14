@@ -8,4 +8,6 @@ Gem::Specification.new do |s|
   s.require_paths     = %w(lib)
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
 	s.authors           = 'James Thompson'
+  s.email             = 'james.b.thompson@gmail.com'
+  s.homepage          = 'https://github.com/julesce/refinerycms-pods'
 end
