@@ -1,0 +1,10 @@
+<% if pod.image.present? %>
+  <div class="side_pod banner">
+      <% if pod.url.present? %>
+          <%= link_to(image_tag(pod.image.image.thumb('280x205').url), pod.url) %>
+      <% else %>
+          <%= image_tag(pod.image.image.thumb('280x205').url) %>
+      <% end %>
+	  <div class="clear"></div>
+  </div>
+<% end %>

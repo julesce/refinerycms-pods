@@ -1,25 +1,33 @@
 en:
-  shared:
-    admin:
-      image_picker:
-        image: image
-  plugins:
-    pods:
-      title: Pods
-  admin:
-    pods:
-      actions:
-        create_new: Add New Pod
-        reorder: Reorder Pods
-        reorder_done: Done Reordering Pods
-      records:
+  refinery:
+    plugins:
+      pods:
         title: Pods
-        sorry_no_results: Sorry! There are no results found.
-        no_items_yet: There are no Pods yet. Click "Add New Pod" to add your first pod.
-      pod:
-        view_live_html: View this pod live <br/><em>(opens in a new window)</em>
-        edit: Edit this pod
-        delete: Remove this pod forever
-  pods:
-    show:
-      other: Other Pods
+    pods:
+      admin:
+        pods:
+          actions:
+            create_new: Add New Pod
+            reorder: Reorder Pods
+            reorder_done: Done Reordering Pods
+          records:
+            title: Pods
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pods yet. Click "Add New Pod" to add your first pod.
+          pod:
+            view_live_html: View this pod live <br/><em>(opens in a new window)</em>
+            edit: Edit this pod
+            delete: Remove this pod forever
+      pods:
+        show:
+          other: Other Pods
+  activerecord:
+    attributes:
+      'refinery/pods/pod':
+        name: Name
+        body: Body
+        url: Url
+        image: Image
+        pod_type: Pod Type
+        portfolio_entry_id: Portfolio Entry
+        video_id: Video
