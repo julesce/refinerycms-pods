@@ -15,7 +15,7 @@ Refinery CMS version 1.0.x.
 
 Open up your ``Gemfile`` and add the following:
 
-    gem 'refinerycms-pods', '1.0.1'
+    gem 'refinerycms-pods', '1.0.3'
 
 Now, run:
 
@@ -31,6 +31,11 @@ Go through the migrations and seeds that have been copied over to make sure you'
 
 ## Usage
 
-Up to you to make use of the pods in your front end, but remember to include the relevant javascript files in your layout:
+Up to you to make use of the pods in your front end, but remember to include the relevant JS/CSS files in your layout:
 
-    <%= javascript_include_tag 'jquery-1.5.2.min', 'jquery.bxSlider.min', 'refinerycms-pods' %>
+	<%= stylesheet_include_tag 'colorbox', 'refinerycms-pods' %>
+    <%= javascript_include_tag 'jquery-1.5.2.min', 'jquery.bxSlider.min', 'jquery.colorbox-min', 'refinerycms-pods' %>
+
+The following will render any pods assigned to your current @page:
+
+	<%= render :partial => 'refinery/pods/shared/pods' %>
