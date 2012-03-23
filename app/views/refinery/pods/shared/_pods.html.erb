@@ -1,5 +1,0 @@
-<% if @page.present? and @page.pods.present? %>
-  <% @page.pods.order(:position).each do |pod| %>
-    <%= render :partial => "refinery/pods/shared/#{pod.system_name}_pod", :locals => {:pod => pod} %>
-  <% end %>
-<% end %>

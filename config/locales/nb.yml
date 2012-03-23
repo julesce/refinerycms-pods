@@ -1,33 +1,21 @@
 nb:
-  refinery:
-    plugins:
-      pods:
-        title: Pods
+  plugins:
     pods:
-      admin:
-        pods:
-          actions:
-            create_new: Lag en ny Pod
-            reorder: Endre rekkefølgen på Pods
-            reorder_done: Ferdig å endre rekkefølgen Pods
-          records:
-            title: Pods
-            sorry_no_results: Beklager! Vi fant ikke noen resultater.
-            no_items_yet: Det er ingen Pods enda. Klikk på "Lag en ny Pod" for å legge til din første pod.
-          pod:
-            view_live_html: Vis hvordan denne pod ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
-            edit: Rediger denne pod
-            delete: Fjern denne pod permanent
-      pods:
-        show:
-          other: Andre Pods
-  activerecord:
-    attributes:
-      'refinery/pods/pod':
-        name: Name
-        body: Body
-        url: Url
-        image: Image
-        pod_type: Pod Type
-        portfolio_entry_id: Portfolio Entry
-        video_id: Video
+      title: Pods
+  admin:
+    pods:
+      actions:
+        create_new: Lag en ny Pod
+        reorder: Endre rekkefølgen på Pods
+        reorder_done: Ferdig å endre rekkefølgen Pods
+      records:
+        title: Pods
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Pods enda. Klikk på "Lag en ny Pod" for å legge til din første pod.
+      pod:
+        view_live_html: Vis hvordan denne pod ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne pod
+        delete: Fjern denne pod permanent
+  pods:
+    show:
+      other: Andre Pods

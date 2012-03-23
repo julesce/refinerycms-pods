@@ -1,33 +1,21 @@
 nl:
-  refinery:
-    plugins:
-      pods:
-        title: Pods
+  plugins:
     pods:
-      admin:
-        pods:
-          actions:
-            create_new: Maak een nieuwe Pod
-            reorder: Wijzig de volgorde van de Pods
-            reorder_done: Klaar met het wijzingen van de volgorde van de Pods
-          records:
-            title: Pods
-            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
-            no_items_yet: Er zijn nog geen Pods. Druk op 'Maak een nieuwe Pod' om de eerste aan te maken.
-          pod:
-            view_live_html: Bekijk deze pod op de website <br/><em>(opent een nieuw venster)</em>
-            edit: Bewerk deze pod
-            delete: Verwijder deze pod voor eeuwig
-      pods:
-        show:
-          other: Andere Pods
-  activerecord:
-    attributes:
-      'refinery/pods/pod':
-        name: Name
-        body: Body
-        url: Url
-        image: Image
-        pod_type: Pod Type
-        portfolio_entry_id: Portfolio Entry
-        video_id: Video
+      title: Pods
+  admin:
+    pods:
+      actions:
+        create_new: Maak een nieuwe Pod
+        reorder: Wijzig de volgorde van de Pods
+        reorder_done: Klaar met het wijzingen van de volgorde van de Pods
+      records:
+        title: Pods
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Pods. Druk op 'Maak een nieuwe Pod' om de eerste aan te maken.
+      pod:
+        view_live_html: Bekijk deze pod op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze pod
+        delete: Verwijder deze pod voor eeuwig
+  pods:
+    show:
+      other: Andere Pods

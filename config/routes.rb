@@ -1,19 +1,10 @@
-Refinery::Core::Engine.routes.append do
+::Refinery::Application.routes.draw do
 
-  # Frontend routes
-  namespace :pods do
-    resources :pods, :path => '', :only => [:index, :show]
-  end
-
-  # Admin routes
-  namespace :pods, :path => '' do
-    namespace :admin, :path => 'refinery' do
-      resources :pods, :except => :show do
-        collection do
-          post :update_positions
-        end
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :pods, :except => :show do
+      collection do
+        post :update_positions
       end
     end
   end
-
 end

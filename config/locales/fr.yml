@@ -1,33 +1,25 @@
 fr:
-  refinery:
-    plugins:
-      pods:
-        title: Pods
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
     pods:
-      admin:
-        pods:
-          actions:
-            create_new: Créer un(e) nouve(au/l/lle) Pod
-            reorder: Réordonner les Pods
-            reorder_done: Fin de réordonnancement des Pods
-          records:
-            title: Pods
-            sorry_no_results: "Désolé ! Aucun résultat."
-            no_items_yet: 'Il n''y a actuellement aucun(e) Pod. Cliquer sur "Créer un(e) nouve(au/l/lle) Pod" pour créer votre premi(er/ère) pod.'
-          pod:
-            view_live_html: Voir ce(t/tte) pod <br/><em>(Ouvre une nouvelle fenêtre)</em>
-            edit: Modifier ce(t/tte) pod
-            delete: Supprimer définitivement ce(t/tte) pod
-      pods:
-        show:
-          other: Autres Pods
-  activerecord:
-    attributes:
-      'refinery/pods/pod':
-        name: Name
-        body: Body
-        url: Url
-        image: Image
-        pod_type: Pod Type
-        portfolio_entry_id: Portfolio Entry
-        video_id: Video
+      title: Pods
+  admin:
+    pods:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Pod
+        reorder: Réordonner les Pods
+        reorder_done: Fin de réordonnancement des Pods
+      records:
+        title: Pods
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Pod. Cliquer sur "Créer un(e) nouve(au/l/lle) Pod" pour créer votre premi(er/ère) pod.'
+      pod:
+        view_live_html: Voir ce(t/tte) pod <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) pod
+        delete: Supprimer définitivement ce(t/tte) pod
+  pods:
+    show:
+      other: Autres Pods
