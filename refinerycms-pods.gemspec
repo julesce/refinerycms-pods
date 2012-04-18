@@ -3,12 +3,12 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-pods'
-  s.version           = '2.0.0'
+  s.version           = '2.0.1'
   s.description       = 'Ruby on Rails Pods extension for Refinery CMS'
-  s.date              = '2012-03-14'
+  s.date              = '2012-04-18'
   s.summary           = 'Pods extension for Refinery CMS'
   s.require_paths     = %w(lib)
-  s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
+  s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*', 'db/**/*', 'public/**/*'] + ["readme.md"]
   s.authors           = 'James Thompson'
   s.email             = 'james.b.thompson@gmail.com'
   s.homepage          = 'https://github.com/julesce/refinerycms-pods'
