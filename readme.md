@@ -35,6 +35,11 @@ And hook up the seed data:
 
 ## Usage
 
+Up to you to make use of the pods in your front end, but remember to include the relevant JS/CSS files in your layout:
+
+	<%= stylesheet_include_tag 'colorbox', 'refinerycms-pods' %>
+    <%= javascript_include_tag 'jquery-1.5.2.min', 'jquery.bxSlider.min', 'jquery.colorbox-min', 'refinerycms-pods' %>
+
 The following will render any pods assigned to your current @page:
 
-  <%= render :partial => 'refinery/pods/shared/pods' %>
+	<%= render :partial => 'refinery/pods/shared/pods' %>

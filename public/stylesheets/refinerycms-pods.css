@@ -1,0 +1,4 @@
+.gallery_pod { width:280px; background:#eeeadf; padding:10px; z-index:1; border:1px solid #beb6a8;}
+.gallery_pod ul { list-style:none; margin:0px; padding:0px; }
+.gallery_pod .bx-prev { position:absolute; top:0px; display:block; text-indent:-9999em; width:20px; height:180px; background:url(../images/bx_prev_gal.png); }
+.gallery_pod .bx-next { position:absolute; top:0px; right:0px; display:block; text-indent:-9999em; width:20px; height:180px; background:url(../images/bx_next_gal.png); }
