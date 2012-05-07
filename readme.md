@@ -5,7 +5,7 @@ Manageable little side-pods for your [Refinery CMS](http://refinerycms.com) webs
 + Portfolios - https://github.com/resolve/refinerycms-portfolio (branch rails-3-1)
 + Videos - https://github.com/julesce/refinerycms-videos (2.0.0)
 
-This version of `refinerycms-pods` supports Rails 3.0.x.
+This version of `refinerycms-pods` supports Rails 3.0.x. and upwards.
 
 ## Requirements
 
@@ -15,7 +15,7 @@ Refinery CMS version 2.0.x.
 
 Open up your ``Gemfile`` and add the following:
 
-    gem 'refinerycms-pods', '~> 2.0.0'
+    gem 'refinerycms-pods', '~> 2.0.2'
 
 Now, run:
 
