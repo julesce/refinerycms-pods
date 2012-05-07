@@ -15,7 +15,7 @@ Refinery CMS version 2.0.x.
 
 Open up your ``Gemfile`` and add the following:
 
-    gem 'refinerycms-pods', '~> 2.0.2'
+    gem 'refinerycms-pods', '~> 2.0.3'
 
 Now, run:
 

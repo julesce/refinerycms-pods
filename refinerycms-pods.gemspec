@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-pods'
-  s.version           = '2.0.2'
+  s.version           = '2.0.3'
   s.description       = 'Ruby on Rails Pods extension for Refinery CMS'
   s.date              = '2012-05-07'
   s.summary           = 'Pods extension for Refinery CMS'
