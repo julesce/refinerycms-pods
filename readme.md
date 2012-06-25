@@ -2,10 +2,10 @@
 
 Manageable little side-pods for your [Refinery CMS](http://refinerycms.com) website. Depends on the following engines:
 
-+ Portfolios - https://github.com/resolve/refinerycms-portfolio (branch rails-3-1)
-+ Videos - https://github.com/julesce/refinerycms-videos (2.0.0)
++ Portfolios - https://github.com/resolve/refinerycms-portfolio (branch rails-3-1 or whichever the stable 2.0 branch is)
++ Videos - https://github.com/julesce/refinerycms-videos (2.0.x)
 
-This version of `refinerycms-pods` supports Rails 3.0.x. and upwards.
+This version of `refinerycms-pods` supports Rails 3.2.x. and upwards. Designed to work with the asset pipeline.
 
 ## Requirements
 
@@ -15,7 +15,7 @@ Refinery CMS version 2.0.x.
 
 Open up your ``Gemfile`` and add the following:
 
-    gem 'refinerycms-pods', '~> 2.0.3'
+    gem 'refinerycms-pods', '~> 2.1.0'
 
 Now, run:
 
@@ -35,10 +35,7 @@ And hook up the seed data:
 
 ## Usage
 
-Up to you to make use of the pods in your front end, but remember to include the relevant JS/CSS files in your layout:
-
-	<%= stylesheet_include_tag 'colorbox', 'refinerycms-pods' %>
-    <%= javascript_include_tag 'jquery-1.5.2.min', 'jquery.bxSlider.min', 'jquery.colorbox-min', 'refinerycms-pods' %>
+Take a look at the /app/assets/stylesheets/variables.scss file to set a couple of variables.
 
 The following will render any pods assigned to your current @page:
 

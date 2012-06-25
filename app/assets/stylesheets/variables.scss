@@ -1,0 +1,17 @@
+/*
+ * Here we define our color variables to be used accross the site
+ */
+
+/*** OPTIONS ***/
+
+$use_rounded_corners: true; /* true / false */
+$video_play_btn: 3; /* 1 / 2 / 3 / 4 */
+
+/*** MIX INS ***/
+
+@mixin rounded-corners { -moz-border-radius:6px; -webkit-border-radius:6px; -khtml-border-radius:6px; border-radius:6px; }
+
+/*** POD ENGINE ***/
+
+$side_pod_border_color: #dddddd;
+$side_pod_background_color: #eef0f1;
