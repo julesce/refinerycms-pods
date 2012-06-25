@@ -2,7 +2,7 @@
   <ul class="gallery_slider">
     <% pod.portfolio_entry.items.each do |item| %>
       <li>
-        <%= image_fu(item.image, '280x180#c') %>
+      	<%= link_to(image_fu(item.image, '280x180#c'), item.image.url, :class => "cboxElement") %>
       </li>
     <% end if pod.portfolio_entry.present? and pod.portfolio_entry.items.present? %>
   </ul>

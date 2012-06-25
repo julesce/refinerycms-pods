@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
-	$(".gallery_slider").bxSlider({
-		auto: true,
-		autoDelay: 3000,
-		pause: 6000,
-		controls: true
-	});
+  $(".gallery_slider").each(function(){
+    $(this).bxSlider({
+   		auto: true,
+    	autoDelay: Math.floor(Math.random()*5000),
+    	pause: 6000,
+    	controls: true
+    });
+  });
 
   $(".video_pod .video a").each(function(index) {
 		var str = $(this).attr("href");
