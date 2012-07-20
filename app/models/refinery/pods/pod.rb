@@ -3,7 +3,7 @@ module Refinery
     class Pod < Refinery::Core::BaseModel
       self.table_name = 'refinery_pods'
 
-      POD_TYPES = %w(content banner gallery video)
+      POD_TYPES = %w(content banner gallery video inquiry)
 
       attr_accessible :name, :body, :url, :image_id, :pod_type, :portfolio_entry_id, :video_id, :position, :page_ids
 

@@ -1,0 +1,18 @@
+<% @inquiry ||= ::Refinery::Inquiries::Inquiry.new %>
+
+<div class="side_pod inquiry_pod">
+  <%= simple_form_for [refinery, :inquiries, @inquiry], :html => {:class => 'form-vertical'} do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email%>
+    <%= f.input :phone %>
+    <%= f.input :message ,:input_html  => {:rows=>6} %>
+    <%= f.button :submit, :class => 'btn-primary' %>
+  <% end %>
+</div>
+
+
+
+
+
+
+
