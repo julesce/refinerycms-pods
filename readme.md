@@ -5,7 +5,7 @@ Manageable little side-pods for your [Refinery CMS](http://refinerycms.com) webs
 + Portfolios - https://github.com/resolve/refinerycms-portfolio (branch rails-3-1 or whichever the stable 2.0 branch is)
 + Videos - https://github.com/julesce/refinerycms-videos (2.0.x)
 + Inquiries - https://github.com/refinery/refinerycms-inquiries (2.0.x)
-+ Simole_form - https://github.com/plataformatec/simple_form (2.0.x)
++ Simple_form - https://github.com/plataformatec/simple_form (2.0.x)
 
 This version of `refinerycms-pods` supports Rails 3.2.x. and upwards. Designed to work with the asset pipeline.
 
