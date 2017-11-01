@@ -11,11 +11,6 @@ module Refinery
           plugin.name = "pods"
           plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.pods_admin_pods_path }
           plugin.pathname = root
-          plugin.activity = {
-            :class_name => :'refinery/pods/pod',
-            :title => 'name'
-          }
-          
         end
       end
 

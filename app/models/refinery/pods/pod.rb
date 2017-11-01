@@ -5,8 +5,6 @@ module Refinery
 
       POD_TYPES = %w(content banner gallery video inquiry)
 
-      attr_accessible :name, :body, :url, :image_id, :pod_type, :portfolio_entry_id, :video_id, :position, :page_ids
-
       acts_as_indexed :fields => [:name, :body, :url, :pod_type]
 
       validates_presence_of :name

@@ -54,12 +54,12 @@
 
   <div class='field'>
     <%= f.label :portfolio_entry_id, 'Gallery' -%>
-    <%= f.collection_select :portfolio_entry_id, ::Refinery::Portfolio::Gallery.order(:title), :id , :title, {:prompt => "-- Please select when relevant --"}, {} -%>
+    <%#= f.collection_select :portfolio_entry_id, ::Refinery::Portfolio::Gallery.order(:title), :id , :title, {:prompt => "-- Please select when relevant --"}, {} -%>
   </div>
 
   <div class='field'>
     <%= f.label :video_id -%>
-    <%= f.collection_select :video_id, ::Refinery::Videos::Video.order(:name), :id , :name, {:prompt => "-- Please select when relevant --"}, {} -%>
+    <%#= f.collection_select :video_id, ::Refinery::Videos::Video.order(:name), :id , :name, {:prompt => "-- Please select when relevant --"}, {} -%>
   </div>
 
   <div class="field">
